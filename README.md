@@ -29,3 +29,6 @@ Todolist
 ## table name:
 
 Todotable
+
+### endpoint: rds
+todo.cfziyh3otjpq.us-east-2.rds.amazonaws.com
