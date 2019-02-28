@@ -1,0 +1,1 @@
+CREATE TABLE Todotable (todoID INT AUTO_INCREMENT, todoItem TEXT NOT NULL, todoDateAdded DATE NOT NULL, todoStatus  BOOLEAN NOT NULL, todoDueBy DATE, PRIMARY KEY (todoID));

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "wmdd-now-routes",
+  "env": {
+    "DBHOST": "todo.cfziyh3otjpq.us-east-2.rds.amazonaws.com",
+    "DBPORT": "3306",
+    "DBUSER": "sagarkalyan",
+    "DBPASSWORD": "sagarkalyan",
+    "DBNAME": "Todolist"
+  },
+  "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/api/get", "methods": ["GET"], "dest": "/api/get/index.js" },
+    { "src": "/api/post", "methods": ["POST"], "dest": "/api/post/index.js" },
+    { "src": "/api/put", "methods": ["PUT"], "dest": "/api/put/index.js" },
+    { "src": "/api/delete", "methods": ["DELETE"], "dest": "/api/delete/index.js" },
+    { "src": "/", "status": 404},
+    { "src": "/api", "status": 404}
+  ]
+}
